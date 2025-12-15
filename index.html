@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>🌍</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/mapa.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<h1>Simbolos del amor alrededor del mundo</h1>
+
+<button class="info-btn" id="infoBtn">?</button>
+
+<div class="info-modal" id="infoModal">
+    <div class="info-content">
+        <button class="info-close" id="infoClose">×</button>
+        <p>
+        Este mapa guarda algo especial esperando ser encontrado.<br>
+        Cada continente muestra una flor, elegida por el significado cultural que tiene en su lugar de origen.<br>
+        Es una forma simple de decir “esto me hizo pensar en vos” a través de culturas y símbolos distintos.
+        </p>
+    </div>
+</div>
+
+<div class="map-container">
+
+    <img src="assets/images/Continents.svg.png" alt="Mapa del mundo" class="mapa">
+
+    <div class="zona america"
+        data-title="Norteamérica"
+        data-text="El cempasúchil simboliza una guia a quienes amamos, incluso a la distancia."
+        data-img="assets/images/cempasúchil.png"></div>
+
+    <div class="zona sudamerica"
+        data-title="Sudamérica"
+        data-text="La leyenda del calafate dice que quien lo prueba, siempre vuelve. Por eso simboliza los lazos que perduran."
+        data-img="assets/images/calafate.png"></div>
+
+    <div class="zona europe"
+        data-title="Europa"
+        data-text="El tulipán rojo es símbolo de una declaración de amor sincera y profunda."
+        data-img="assets/images/tulipan-rojo.png"></div>
+
+    <div class="zona africa"
+        data-title="África"
+        data-text="La protea simboliza un amor fuerte, capaz de adaptarse y florecer en cualquier entorno."
+        data-img="assets/images/protea.png"></div>
+
+    <div class="zona asia"
+        data-title="Asia"
+        data-text="El loto simboliza un amor puro que florece incluso en los momentos dificiles."
+        data-img="assets/images/loto.png"></div>
+
+    <div class="zona oceania"
+        data-title="Oceanía"
+        data-text="El hibiscus representa un amor intenso, lleno de energía y vida"
+        data-img="assets/images/hibiscus.png"></div>
+
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="tooltip" id="tooltip">
+    <button class="close" id="close">×</button>
+    <img id="tooltip-img" alt="">
+    <h2 id="tooltip-title"></h2>
+    <p id="tooltip-text"></p>
+</div>
+
+<div class="cartel">
+    Tocá cualquier continente para aprender
+</div>
+
+
+<script src="assets/js/mapa.js"></script>
+</body>
+</html>
